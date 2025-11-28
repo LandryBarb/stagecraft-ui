@@ -1,0 +1,16 @@
+/* Minimal modern reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--sc-color-stage-black);
+  color: var(--sc-color-ghost-white);
+  font-family: var(--sc-font-sans);
+}

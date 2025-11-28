@@ -1,0 +1,78 @@
+:root {
+  /* ============================================
+     COLORS — BRAND
+     ============================================ */
+  --sc-color-spotlight: #42a5f5;
+  --sc-color-stage-black: #0d0f14;
+  --sc-color-rig-gray: #1b1e27;
+  --sc-color-cable-steel: #2c313d;
+  --sc-color-ghost-white: #f5f5f5;
+
+  /* Status Colors */
+  --sc-color-scene-amber: #ffb74d;
+  --sc-color-laser-green: #8bc34a;
+  --sc-color-caution-red: #ef5350;
+  --sc-color-dim-violet: #7e57c2;
+
+  /* ======================
+     SPACING SCALE
+     ====================== */
+  --sc-space-2xs: 0.125rem;
+  --sc-space-xs: 0.25rem;
+  --sc-space-sm: 0.5rem;
+  --sc-space-md: 1rem;
+  --sc-space-lg: 1.5rem;
+  --sc-space-xl: 2rem;
+  --sc-space-2xl: 3rem;
+
+  /* ======================
+     TYPOGRAPHY
+     ====================== */
+
+  /* Font Families */
+  --sc-font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+
+  /* Font Sizes */
+  --sc-text-xs: 0.75rem;
+  --sc-text-sm: 0.875rem;
+  --sc-text-md: 1rem;
+  --sc-text-lg: 1.25rem;
+  --sc-text-xl: 1.5rem;
+  --sc-text-2xl: 2rem;
+
+  /* Line Heights */
+  --sc-leading-tight: 1.2;
+  --sc-leading-normal: 1.4;
+  --sc-leading-relaxed: 1.6;
+
+  /* ======================
+     RADIUS
+     ====================== */
+  --sc-radius-sm: 4px;
+  --sc-radius-md: 8px;
+  --sc-radius-lg: 12px;
+  --sc-radius-xl: 20px;
+
+  /* ======================
+     BORDERS
+     ====================== */
+  --sc-border-color: var(--sc-color-cable-steel);
+  --sc-border-width: 1px;
+
+  /* ======================
+     SHADOWS
+     ====================== */
+  --sc-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --sc-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --sc-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.45);
+
+  /* ======================
+     MOTIF ACCENTS
+     ====================== */
+  --sc-accent-beam: radial-gradient(
+    circle at 30% 30%,
+    rgba(66, 165, 245, 0.15),
+    transparent 60%
+  );
+}

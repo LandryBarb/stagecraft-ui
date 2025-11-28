@@ -1,29 +1,5 @@
-Perfect — here is a **fully polished, professional, portfolio-ready Stagecraft UI README**, written in the tone and structure used by real design system teams (Shopify Polaris, Adobe Spectrum, Radix UI, Vuetify, Carbon Design, etc.).
-
-It incorporates:
-
-* Your branding
-* Your logo
-* Your product positioning
-* Component library philosophy
-* Installation (NPM)
-* Usage
-* Accessibility principles
-* Roadmap
-* Contribution guidelines
-* Badges + repository structure
-* Interview-friendly framing
-
-This is **plug-and-play** — just drop it into your root `README.md`.
-
-If you want, I can also generate a **GitHub repository header**, **badges**, and a **Docs site structure** later.
 
 ---
-
-# 📘 **README.md — Stagecraft UI**
-
-````md
-<div align="center">
 
 # 🎭 Stagecraft UI  
 ### Accessible Component Library for Modern Web Apps
@@ -33,7 +9,6 @@ cinema, stage production, and entertainment UI patterns.
 
 ![Stagecraft UI Banner](./assets/stagecraft_banner.png)
 
-</div>
 
 ---
 

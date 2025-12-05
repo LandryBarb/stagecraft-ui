@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Stagecraft UI – Master Stylesheet
+   Global styling system built entirely on design tokens.
+   This is the foundational stylesheet of the design system.
+   ========================================================================== */
+
+/* --------------------------------------------
+   1. Body / App-Level Defaults
+-------------------------------------------- */
+body {
+  background: var(--sc-color-stage-black);
+  color: var(--sc-color-ghost-white);
+  font-family: var(--sc-font-sans);
+  line-height: var(--sc-leading-normal);
+  margin: 0;
+}
+
+/* --------------------------------------------
+   2. Typography Scale
+-------------------------------------------- */
+.h1 {
+  font-size: var(--sc-text-2xl);
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: var(--sc-text-xl);
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: var(--sc-text-lg);
+  font-weight: 600;
+}
+
+.p {
+  font-size: var(--sc-text-md);
+}
+
+small {
+  font-size: var(--sc-text-sm);
+}
+
+/* --------------------------------------------
+   3. Color Utility Classes (Token-Based)
+-------------------------------------------- */
+.bg-stage {
+  background: var(--sc-color-stage-black);
+}
+
+.bg-rig {
+  background: var(--sc-color-rig-gray);
+}
+
+.bg-cable {
+  background: var(--sc-color-cable-steel);
+}
+
+.bg-spotlight {
+  background: var(--sc-color-spotlight);
+}
+
+.text-white {
+  color: var(--sc-color-ghost-white);
+}
+
+.text-muted {
+  color: rgba(255,255,255,0.55);
+}
+
+.text-spotlight {
+  color: var(--sc-color-spotlight);
+}
+
+/* --------------------------------------------
+   4. Layout Helpers (Padding, Margin, Flex)
+-------------------------------------------- */
+
+/* Padding */
+.p-xs { padding: var(--sc-space-xs); }
+.p-sm { padding: var(--sc-space-sm); }
+.p-md { padding: var(--sc-space-md); }
+.p-lg { padding: var(--sc-space-lg); }
+.p-xl { padding: var(--sc-space-xl); }
+
+/* Margin */
+.m-xs { margin: var(--sc-space-xs); }
+.m-sm { margin: var(--sc-space-sm); }
+.m-md { margin: var(--sc-space-md); }
+.m-lg { margin: var(--sc-space-lg); }
+.m-xl { margin: var(--sc-space-xl); }
+
+/* Flex Helpers */
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+
+/* --------------------------------------------
+   5. Borders & Radius
+-------------------------------------------- */
+.rounded-sm { border-radius: var(--sc-radius-sm); }
+.rounded-md { border-radius: var(--sc-radius-md); }
+.rounded-lg { border-radius: var(--sc-radius-lg); }
+.rounded-xl { border-radius: var(--sc-radius-xl); }
+
+.border {
+  border: var(--sc-border-width) solid var(--sc-border-color);
+}
+
+/* --------------------------------------------
+   6. Focus Rings (AAA Compliant)
+-------------------------------------------- */
+.focus-ring {
+  outline: 3px solid var(--sc-color-ghost-white);
+  outline-offset: 4px;
+}
+
+/* --------------------------------------------
+   7. Shadows
+-------------------------------------------- */
+.shadow-sm { box-shadow: var(--sc-shadow-sm); }
+.shadow-md { box-shadow: var(--sc-shadow-md); }
+.shadow-lg { box-shadow: var(--sc-shadow-lg); }
+
+/* --------------------------------------------
+   8. Transitions
+-------------------------------------------- */
+.transition {
+  transition: all 0.2s ease;
+}
+
+.transition-fast {
+  transition: all 0.15s ease;
+}
+
+/* --------------------------------------------
+   9. Container Widths
+-------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: var(--sc-space-lg);
+  padding-right: var(--sc-space-lg);
+}
+
+/* --------------------------------------------
+   10. Grid System (Responsive)
+-------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--sc-space-md);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .grid-md-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid-sm-1 { grid-template-columns: 1fr; }
+}
+
+/* --------------------------------------------
+   11. App Shell Helpers (Useful for Dashboards)
+-------------------------------------------- */
+.sidebar {
+  background: var(--sc-color-rig-gray);
+  border-right: 1px solid var(--sc-color-cable-steel);
+}
+
+.sidebar-collapsed {
+  width: 5rem;
+}
+
+.sidebar-expanded {
+  width: 16rem;
+}
+
+.main-content {
+  background: var(--sc-color-stage-black);
+  color: var(--sc-color-ghost-white);
+  padding: var(--sc-space-lg);
+}

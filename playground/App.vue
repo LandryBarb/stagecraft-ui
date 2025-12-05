@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import Dashboard from "./components/Dashboard.vue";
+</script>
+
 <template>
-  <div style="padding: 2rem; color: white; font-family: var(--sc-font-sans);">
+  <Dashboard/>
+  <!-- <div style="padding: 2rem; color: white; font-family: var(--sc-font-sans);">
     <h1>Stagecraft UI Playground</h1>
 
     <section style="margin-top: 2rem;">
@@ -21,5 +26,5 @@
       <UiButton :loading="true">Loading</UiButton>
       <UiButton :disabled="true">Disabled</UiButton>
     </section>
-  </div>
+  </div> -->
 </template>

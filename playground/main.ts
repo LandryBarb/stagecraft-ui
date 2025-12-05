@@ -7,6 +7,7 @@ import * as StagecraftUI from '../src'
 // Import global styles & design tokens
 import '../src/styles/tokens.css'
 import '../src/styles/reset.css'
+import '../src/styles/master.css'
 
 const app = createApp(App)
 
